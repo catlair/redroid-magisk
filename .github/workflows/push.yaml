@@ -40,5 +40,6 @@ jobs:
 
       - name: Build and Push
         run: |
+          pip install -r requirements.txt
           python redroid.py -m
           docker push
