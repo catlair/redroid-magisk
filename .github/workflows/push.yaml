@@ -42,4 +42,5 @@ jobs:
         run: |
           pip install -r requirements.txt
           python redroid.py -m
-          docker push redroid/redroid:11.0.0_magisk
+          docker image tag redroid/redroid:11.0.0_magisk catlair/redroid:11.0.0_magisk
+          docker push catlair/redroid:11.0.0_magisk_fix
